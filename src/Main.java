@@ -19,7 +19,6 @@ public class Main {
 		Scanner inputStrings = new Scanner(System.in);
 		Scanner input = new Scanner(System.in);
 
-
 		System.out.print("-- Criando a conta do cliente 1 --\n");
 		System.out.print("Digite o nome do cliente 1: ");
 		Conta cliente = new Conta(inputStrings.nextLine(), -10);
@@ -37,7 +36,6 @@ public class Main {
 		System.out.printf("Nome do cliente 2: %s%n", cliente2.getName());
 		System.out.printf("Saldo do cliente 2: %.2f%n", cliente2.getSaldo());
 
-
 		System.out.print(" -- Operações de depósito --\n");
 		System.out.print("Cliente 1 fazendo um depósito ...\n");
 		cliente.deposito(50.60);
@@ -46,6 +44,20 @@ public class Main {
 		cliente2.deposito(-10);
 
 		System.out.print(" -- Contas depois dos depósitos --\n");
+		System.out.printf("Nome do cliente 1: %s%n", cliente.getName());
+		System.out.printf("Saldo do cliente 1: %.2f%n", cliente.getSaldo());
+
+		System.out.printf("Nome do cliente 2: %s%n", cliente2.getName());
+		System.out.printf("Saldo do cliente 2: %.2f%n", cliente2.getSaldo());
+
+		System.out.print(" -- Operações de saque --\n");
+		System.out.print("Cliente 1 fazendo um saque ...\n");
+		cliente.saque(45.99);
+
+		System.out.print("Cliente 2 fazendo um saque ...\n");
+		cliente2.saque(102.36);
+
+		System.out.print(" -- Contas depois dos saques --\n");
 		System.out.printf("Nome do cliente 1: %s%n", cliente.getName());
 		System.out.printf("Saldo do cliente 1: %.2f%n", cliente.getSaldo());
 
