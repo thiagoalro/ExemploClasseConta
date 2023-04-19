@@ -21,7 +21,11 @@ public class Main {
 
 		System.out.print("-- Criando a conta do cliente 1 --\n");
 		System.out.print("Digite o nome do cliente 1: ");
-		Conta cliente = new Conta(inputStrings.nextLine(), -10);
+		String nomeCliente = inputStrings.nextLine();
+		System.out.print("Digite o saldo inicial do cliente 1: ");
+		double saldoInicialCliente = input.nextDouble();
+
+		Conta cliente = new Conta(nomeCliente, saldoInicialCliente);
 
 		System.out.print(" -- Conta do cliente 1 criada: --\n");
 

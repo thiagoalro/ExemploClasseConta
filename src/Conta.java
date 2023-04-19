@@ -22,13 +22,19 @@ public class Conta {
 	}
 
 	public void saque(double valorSaque){
+
 		if (valorSaque <= saldo) {
 			this.saldo = saldo - valorSaque;
 		}
+
 		else {
 			System.out.print("Valor do saque excede o saldo da sua conta! Operação cancelada!\n");
 		}
 	}
+
+
+
+
 
 	public void deposito(double valorDeposito){
 		if (valorDeposito > 0){
